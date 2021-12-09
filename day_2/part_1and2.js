@@ -1,6 +1,6 @@
-const readFile = require('./read_file.js')
+const readFile = require('../read_file.js')
 
-const data = readFile('day_2_input.txt')
+const data = readFile('day_2/input.txt')
 
 const result = data.reduce((coordinates, data) => {
     const [direction, amount] = data.split(' ')
@@ -13,8 +13,6 @@ const result = data.reduce((coordinates, data) => {
     } else if (direction === 'up') {
         coordinates.aim -= +amount
     }
-
-    console.log(coordinates)
 
     return coordinates
 }, {

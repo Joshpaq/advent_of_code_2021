@@ -1,6 +1,6 @@
-const readFile = require('./read_file.js')
+const readFile = require('../read_file.js')
 
-const data = readFile('day_1_input.txt')
+const data = readFile('day_1/input.txt')
 
 const group = data.reduce((grp, cur, i, arr) => {
     const A = cur
